@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>B5 Forms</title>
+	<!-- Include Bootstrap via CDN -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+
+	<!-- Add style -->
+	<style>
+		body 		{
+			background-color: #FFD5FF;
+		}
+		.container {
+			background-color: #FF92C2;
+			padding: 5px;
+		}
+		.header	{
+			background-image: url(https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/2a7c2cd1-3289-43ce-8b1f-28a9a39dc71e/d190szd-2dd1e295-122f-4dd3-bf89-b65df8f03287.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzJhN2MyY2QxLTMyODktNDNjZS04YjFmLTI4YTlhMzlkYzcxZVwvZDE5MHN6ZC0yZGQxZTI5NS0xMjJmLTRkZDMtYmY4OS1iNjVkZjhmMDMyODcuanBnIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.ZlAg8bKCzpmbK8JKuhFQFizDfkYQI79PibeoHbqJXuw);
+		}
+	</style>
+</head>
+<body>
+
+<div class="container mt-3">
+	<h2>Creating Vertical Form Layout</h2>
+
+	<form>
+	    <div class="mb-3" > <!--div for email-->
+	        <label for="inputEmail">Email</label>
+	        <input type="email" id="inputEmail" placeholder="Email">
+	    </div>
+
+	    <div class="password mb-3" > <!--div for password-->
+	        <label for="inputPassword">Password</label>
+	        <input type="password" id="inputPassword" placeholder="Password">
+	    </div>
+
+	    <div class="Remember mb-3" > <!--div for checkbox-->
+	        <div >
+	            <input type="checkbox" id="checkRemember">
+	            <label for="checkRemember">Remember me</label>
+	        </div>
+	    </div>
+	    <button type="submit" class="btn btn-primary">Sign in</button>
+	</form>
+</div>
+	<div class="container mt-3">
+	 <h2>Creating Horizontal Form Layout</h2> 
+
+	<form>
+	    <div class="mb-3" > <!--div for email-->
+	        <label for="inputEmail">Email</label>
+	        <input type="email" id="inputEmail" placeholder="Email">
+	    </div>
+
+	    <div class="password mb-3" > <!--div for password-->
+	        <label for="inputPassword">Password</label>
+	        <input type="password" id="inputPassword" placeholder="Password">
+	   <div class="container"> 
+	   	<mark>Remember! Never give your password to anyone!</mark> 
+</div>
+
+	    <div class="Remember mb-3" > <!--div for checkbox-->
+	        <div >
+	            <input type="checkbox" id="checkRemember">
+	            <label for="checkRemember">Remember me</label>
+	        </div>
+	    </div>
+	    <button type="submit" class="btn btn-primary">Sign in</button>
+	</form>
+</div>
+
+
+	<div class="container mt-3">
+	 <h2>Creating Inline Form Layout</h2> 
+
+	<form>
+	    <div class="mb-3" > <!--div for email-->
+	        <label for="inputEmail">Email</label>
+	        <input type="email" id="inputEmail" placeholder="Email">
+	    </div>
+
+	    <div class="password mb-3" > <!--div for password-->
+	        <label for="inputPassword">Password</label>
+	        <input type="password" id="inputPassword" placeholder="Password">
+	    </div>
+
+	    <div class="alert alert-danger alert-dismissible">
+    <a   href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+    <strong>Remember!</strong> Never give your password to anyone. 
+ 		 </div>
+	        <div >
+	            <input type="checkbox" id="checkRemember">
+	            <label for="checkRemember">Remember me</label>
+	        </div>
+	    </div>
+	    <button type="submit" class="btn btn-primary">Sign in</button>
+	</form>
+</div>
+</body>
+</html>
